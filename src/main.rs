@@ -60,7 +60,7 @@ fn roman_numerals(x: &mut u32) -> String {
         9 => output.push_str("XC"),
         _ => {},
     }
-    *x = *x - (100 - multiplier);
+    *x = *x - (10 * multiplier);
 
     //Ones - V(5) I(1)
     match *x {
